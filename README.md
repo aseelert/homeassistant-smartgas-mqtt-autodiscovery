@@ -17,11 +17,21 @@ This script publishes MQTT discovery configuration for Home Assistant to automat
 - Smartnetz Gasreader 5 device publishing to MQTT
 - Home Assistant with MQTT integration enabled
 
+#### Smartgas Settings
+<img width="527" height="777" alt="image" src="https://github.com/user-attachments/assets/af6e2833-1f58-49f9-aeb9-d38ca282b6a9" />
+
+#### Homeassistant MQTT Settings - Auto Discovery
+https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery
+
+<img width="588" height="1173" alt="image" src="https://github.com/user-attachments/assets/facb87d3-fbcb-4c0b-8a6d-226b9c560ec7" />
+
+
+
 ## Installation
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/aseelert/homeassistant-smartgas-mqtt-autodiscovery
    cd homeassistant-smartgas-mqtt-autodiscovery
    ```
 
@@ -106,6 +116,13 @@ The script creates the following sensors in Home Assistant:
 
 All sensors are grouped under a single device: **Smartnetz Gasreader 5**
 
+you will see new topics are created
+<img width="487" height="212" alt="image" src="https://github.com/user-attachments/assets/e1d7526e-4999-4c10-80f2-c98ad6d774aa" />
+
+<img width="799" height="510" alt="image" src="https://github.com/user-attachments/assets/d6b97516-be27-4667-bd6c-39358a729594" />
+
+
+
 ## Expected MQTT Topic Format
 
 The script expects your Gasreader 5 to publish JSON data to:
@@ -165,8 +182,6 @@ tele/gaszaehler/json
 
 ## License
 
-[Add your license here]
+MIT
 
-## Contributing
 
-[Add contribution guidelines here]
